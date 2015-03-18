@@ -1,7 +1,7 @@
 ###### - mldr package downloads
 
 library(cranlogs)
-dwmldr <- cran_downloads(when = "last-month", package = "mldr")
+dwmldr <- cran_downloads(from = "2015-02-13", to = Sys.Date(), package = "mldr")
 data <- dwmldr$downloads[[1]]
 
 plot(data$downloads, type = "b", lwd = 3, lty = 1, pch = 7,
